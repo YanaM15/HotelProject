@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bsuir.controllers.StartController">
+    <children>
+        <HBox prefHeight="400.0" prefWidth="600.0">
+            <children>
+                <AnchorPane prefHeight="400.0" prefWidth="449.0" style="-fx-background-color: #FFFFFF;">
+                    <children>
+                        <ImageView fitHeight="381.0" fitWidth="359.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/hotel-start.jpg" />
+                            </image>
+                        </ImageView>
+                    </children></AnchorPane>
+                <AnchorPane prefHeight="400.0" prefWidth="333.0" style="-fx-background-color: #008080;">
+                    <children>
+                        <Button fx:id="startButton" layoutX="65.0" layoutY="337.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="112.0" style="-fx-background-color: #00ffd0; -fx-cursor: hand;" text="Войти" textFill="#0e82ed">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font></Button>
+                        <Label layoutX="33.0" layoutY="85.0" prefHeight="114.0" prefWidth="176.0" text="Мы рады Вас приветствовать в нашем отеле!" textAlignment="CENTER" textFill="#00ffd0e0" wrapText="true">
+                            <font>
+                                <Font name="System Bold" size="21.0" />
+                            </font></Label>
+                    </children></AnchorPane>
+            </children></HBox>
+    </children>
+</AnchorPane>

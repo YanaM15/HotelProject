@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bsuir.controllers.MenuAdminController">
+    <children>
+        <HBox prefHeight="400.0" prefWidth="600.0">
+            <children>
+                <AnchorPane prefHeight="400.0" prefWidth="241.0">
+                    <children>
+                        <Label layoutX="26.0" layoutY="29.0" prefHeight="69.0" prefWidth="190.0" text="Профиль администратора" textAlignment="CENTER" textFill="TEAL" wrapText="true">
+                            <font>
+                                <Font name="System Bold" size="23.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="97.0" fitWidth="113.0" layoutX="71.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/user.png" />
+                            </image>
+                        </ImageView>
+                        <Button fx:id="btnBack" layoutX="83.0" layoutY="336.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="73.0" style="-fx-background-color: #008080; -fx-cursor: hand;" text="Назад" textFill="#00ffd0">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font></Button>
+                        <Label fx:id="lbLogin" alignment="CENTER" layoutX="3.0" layoutY="237.0" prefHeight="27.0" prefWidth="235.0" text="admin126" textFill="#0c94f5">
+                            <font>
+                                <Font size="18.0" />
+                            </font></Label>
+                    </children></AnchorPane>
+                <AnchorPane prefHeight="400.0" prefWidth="358.0" style="-fx-background-color: #CCFFFF;">
+                    <children>
+                        <Button fx:id="btnReviews" layoutX="56.0" layoutY="62.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="256.0" style="-fx-background-color: #008080; -fx-cursor: hand;" text="Просмотр отзывов" textFill="#00ffd0">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnRooms" layoutX="56.0" layoutY="122.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="256.0" style="-fx-background-color: #008080; -fx-cursor: hand;" text="Управление номерами" textFill="#00ffd0">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnServices" layoutX="56.0" layoutY="179.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="256.0" style="-fx-background-color: #008080; -fx-cursor: hand;" text="Информация об услугах" textFill="#00ffd0">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnClients" layoutX="56.0" layoutY="239.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="256.0" style="-fx-background-color: #008080; -fx-cursor: hand;" text="Информация о пользвателях" textFill="#00ffd0">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnBookings" layoutX="56.0" layoutY="298.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="256.0" style="-fx-background-color: #008080; -fx-cursor: hand;" text="Брони" textFill="#00ffd0">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

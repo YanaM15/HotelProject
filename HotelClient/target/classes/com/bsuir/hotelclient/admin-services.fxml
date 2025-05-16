@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bsuir.controllers.AdminServicesController">
+    <children>
+        <HBox prefHeight="400.0" prefWidth="600.0">
+            <children>
+                <AnchorPane prefHeight="400.0" prefWidth="199.0">
+                    <children>
+                        <ImageView fitHeight="194.0" fitWidth="199.0" layoutX="2.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/pngtree-bellboy.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="60.0" layoutY="24.0" prefHeight="39.0" prefWidth="77.0" text="Услуги" textFill="TEAL">
+                            <font>
+                                <Font name="System Bold" size="23.0" />
+                            </font></Label>
+                        <Button fx:id="btnBack" layoutX="61.0" layoutY="335.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="77.0" style="-fx-background-color: #008080; -fx-cursor: hand;" text="Назад" textFill="#00ffd0">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font></Button>
+                    </children></AnchorPane>
+                <AnchorPane prefHeight="400.0" prefWidth="401.0" style="-fx-background-color: #CCFFFF;">
+                    <children>
+                        <ImageView fitHeight="143.0" fitWidth="139.0" layoutX="38.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true" />
+                        <TableView fx:id="tvServices" layoutX="20.0" layoutY="18.0" prefHeight="201.0" prefWidth="360.0">
+                            <columns>
+                                <TableColumn fx:id="tcServName" prefWidth="235.20000076293945" text="Описание" />
+                                <TableColumn fx:id="tcServPrice" prefWidth="123.20004272460938" text="Цена" />
+                            </columns>
+                        </TableView>
+                        <Button fx:id="btnAdd" layoutX="27.0" layoutY="336.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="105.0" style="-fx-background-color: #008080; -fx-cursor: hand;" text="Добавить" textFill="#00ffd0">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnUpdate" layoutX="267.0" layoutY="335.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="106.0" style="-fx-background-color: #008080; -fx-cursor: hand;" text="Обновить" textFill="#00ffd0">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnDelete" layoutX="147.0" layoutY="335.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="106.0" style="-fx-background-color: #008080; -fx-cursor: hand;" text="Удалить" textFill="#00ffd0">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Button>
+                        <Label layoutX="27.0" layoutY="240.0" prefHeight="38.0" prefWidth="90.0" text="Услуга" textFill="TEAL">
+                            <font>
+                                <Font size="19.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="27.0" layoutY="281.0" prefHeight="26.0" prefWidth="68.0" text="Цена" textFill="TEAL">
+                            <font>
+                                <Font size="19.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="tfService" layoutX="108.0" layoutY="243.0" prefHeight="28.0" prefWidth="263.0" />
+                        <TextField fx:id="tfPrice" layoutX="108.0" layoutY="280.0" />
+                    </children></AnchorPane>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

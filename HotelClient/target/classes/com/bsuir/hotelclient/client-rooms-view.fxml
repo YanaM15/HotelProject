@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #CCFFFF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bsuir.controllers.ClientRoomsViewController">
+    <Label alignment="CENTER" layoutX="125.0" layoutY="9.0" prefHeight="38.0" prefWidth="333.0" text="Просмотр номеров" textFill="TEAL">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Label>
+   <TableView fx:id="tvRooms" layoutX="19.0" layoutY="47.0" prefHeight="150.0" prefWidth="564.0">
+     <columns>
+       <TableColumn fx:id="tcName" prefWidth="125.0" text="Тип" />
+       <TableColumn fx:id="tcSquare" prefWidth="97.66668701171875" text="Площадь, м.кв." />
+       <TableColumn fx:id="tcPlaces" prefWidth="260.0" text="Основные места" />
+       <TableColumn fx:id="tcPrice" prefWidth="70.0" text="Цена/сут." />
+     </columns>
+   </TableView>
+   <ImageView fx:id="imRoom" fitHeight="178.0" fitWidth="230.0" layoutX="19.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@images/люкс.jpg" />
+      </image></ImageView>
+   <TextArea fx:id="taDiscription" editable="false" layoutX="258.0" layoutY="230.0" prefHeight="74.0" prefWidth="325.0" wrapText="true" />
+   <Label layoutX="258.0" layoutY="307.0" prefHeight="17.0" prefWidth="249.0" text="Количество дополнительных мест:" textFill="TEAL">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Label>
+   <Label fx:id="lbExtraPlaces" layoutX="258.0" layoutY="324.0" prefHeight="17.0" prefWidth="325.0" />
+   <Label layoutX="258.0" layoutY="208.0" prefHeight="17.0" prefWidth="207.0" text="Описание номера:" textFill="TEAL">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Label>
+   <Button fx:id="btnBooking" layoutX="440.0" layoutY="356.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" style="-fx-background-color: #008080; -fx-cursor: hand;" text="Забронировать" textFill="#00ffd0">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Button>
+   <Button fx:id="btnBack" layoutX="260.0" layoutY="356.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="144.0" style="-fx-background-color: #008080; -fx-cursor: hand;" text="Назад" textFill="#00ffd0">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Button>
+
+</AnchorPane>

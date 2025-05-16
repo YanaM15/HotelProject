@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #CCFFFF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bsuir.controllers.AdminBookingsController">
+    <children>
+        <Label alignment="CENTER" layoutX="148.0" layoutY="4.0" prefHeight="29.0" prefWidth="303.0" text="Забронированные номера" textFill="TEAL">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font></Label>
+        <TableView fx:id="tvBooking" layoutX="13.0" layoutY="37.0" prefHeight="216.0" prefWidth="575.0">
+            <columns>
+                <TableColumn fx:id="tcNumber" prefWidth="45.0" text="Номер" />
+                <TableColumn fx:id="tcClient" prefWidth="140.0" text="Клиент" />
+                <TableColumn fx:id="tcCheckIn" prefWidth="70.0" text="Заезд" />
+                <TableColumn fx:id="tcCheckOut" prefWidth="70.0" text="Выезд" />
+                <TableColumn fx:id="tcServices" prefWidth="110.0" text="Доп. Услуги" />
+                <TableColumn fx:id="tcCost" prefWidth="70.0" text="Цена" />
+                <TableColumn fx:id="tcStatus" prefWidth="65.0" text="Статус" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnBack" layoutX="26.0" layoutY="344.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="71.0" style="-fx-background-color: #008080; -fx-cursor: hand;" text="Назад" textFill="#00ffd0">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font></Button>
+        <Label layoutX="148.0" layoutY="270.0" prefHeight="26.0" prefWidth="142.0" text="Поиск по номеру" textFill="TEAL">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="tfNumber" layoutX="292.0" layoutY="267.0" prefHeight="26.0" prefWidth="93.0" />
+        <Label layoutX="148.0" layoutY="306.0" prefHeight="26.0" prefWidth="142.0" text="Поиск по дате въезда" textFill="TEAL">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <DatePicker fx:id="dpDate" editable="false" layoutX="292.0" layoutY="302.0" prefHeight="26.0" prefWidth="159.0" />
+        <Button fx:id="btnFindNumber" layoutX="511.0" layoutY="268.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="61.0" style="-fx-background-color: #008080; -fx-cursor: hand;" text="Найти" textFill="#00ffd0">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnFindDate" layoutX="511.0" layoutY="302.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: #008080; -fx-cursor: hand;" text="Найти" textFill="#00ffd0">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
