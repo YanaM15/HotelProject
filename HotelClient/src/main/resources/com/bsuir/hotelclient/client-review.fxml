@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bsuir.controllers.ClientReviewController">
+    <children>
+        <HBox prefHeight="400.0" prefWidth="600.0">
+            <children>
+                <AnchorPane prefHeight="400.0" prefWidth="251.0" style="-fx-background-color: white;">
+                    <children>
+                        <ImageView fitHeight="141.0" fitWidth="232.0" layoutX="2.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/review.jpg" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="67.0" layoutY="27.0" prefHeight="35.0" prefWidth="95.0" text="Отзывы" textFill="TEAL">
+                            <font>
+                                <Font name="System Bold" size="23.0" />
+                            </font></Label>
+                        <Button fx:id="btnBack" layoutX="72.0" layoutY="339.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="81.0" style="-fx-background-color: #008080; -fx-cursor: hand;" text="Назад" textFill="#00ffd0">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font></Button>
+                  <Label fx:id="lbLogin" alignment="CENTER" layoutX="23.0" layoutY="247.0" prefHeight="17.0" prefWidth="180.0" />
+                  <Label fx:id="lbName" alignment="CENTER" layoutX="23.0" layoutY="278.0" prefWidth="180.0" />
+                    </children></AnchorPane>
+                <AnchorPane prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #CCFFFF;">
+                    <children>
+                        <Label layoutX="42.0" layoutY="20.0" prefHeight="78.0" prefWidth="283.0" text="Мы будем рады, если Вы оцените наш отель!" textAlignment="CENTER" textFill="TEAL" wrapText="true">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="btnAddReview" layoutX="115.0" layoutY="337.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="150.0" style="-fx-background-color: #008080; -fx-cursor: hand;" text="Оставить отзыв" textFill="#00ffd0">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font></Button>
+                        <Label layoutX="42.0" layoutY="134.0" prefHeight="35.0" prefWidth="73.0" text="Рейтинг" textFill="TEAL">
+                            <font>
+                                <Font size="19.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="42.0" layoutY="168.0" prefHeight="35.0" prefWidth="123.0" text="Комментарий" textFill="TEAL">
+                            <font>
+                                <Font size="19.0" />
+                            </font>
+                        </Label>
+                        <TextArea fx:id="taComment" layoutX="41.0" layoutY="200.0" prefHeight="114.0" prefWidth="298.0" />
+                        <ComboBox fx:id="cbRating" accessibleText="1&#10;2&#10;3&#10;4&#10;5" layoutX="135.0" layoutY="139.0" prefWidth="150.0" promptText="5 stars" visibleRowCount="5" />
+                    </children></AnchorPane>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

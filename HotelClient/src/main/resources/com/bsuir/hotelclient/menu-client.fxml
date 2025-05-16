@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bsuir.controllers.MenuClientController">
+    <HBox alignment="TOP_CENTER">
+        <children>
+            <AnchorPane prefHeight="400.0" prefWidth="241.0" style="-fx-background-color: white;">
+                <children>
+                    <ImageView fitHeight="97.0" fitWidth="113.0" layoutX="72.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="72.0" AnchorPane.rightAnchor="72.6">
+                        <image>
+                            <Image url="@images/user.png" />
+                        </image></ImageView>
+                    <Label fx:id="lbLogin" alignment="CENTER" layoutX="13.0" layoutY="229.0" prefHeight="34.0" prefWidth="222.0" text="User_login" textFill="#0c94f5">
+                        <font>
+                            <Font size="18.0" />
+                        </font>
+                    </Label>
+                    <Button fx:id="btnBack" layoutX="86.0" layoutY="334.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="75.0" style="-fx-background-color: #008080; -fx-cursor: hand;" text="Назад" textFill="#00ffd0">
+                        <font>
+                            <Font name="System Bold" size="16.0" />
+                        </font>
+                    </Button>
+                    <Label fx:id="lbName" alignment="CENTER" layoutX="25.0" layoutY="264.0" prefHeight="17.0" prefWidth="208.0" text="Name" textFill="#0c94f5" />
+                    <Label layoutX="27.0" layoutY="25.0" prefHeight="71.0" prefWidth="187.0" text="Профиль пользователя" textAlignment="CENTER" textFill="TEAL" wrapText="true">
+                        <font>
+                            <Font name="System Bold" size="23.0" />
+                        </font>
+                    </Label>
+               <Label fx:id="lbBlock" alignment="CENTER" layoutX="7.0" layoutY="283.0" prefHeight="46.0" prefWidth="230.0" textAlignment="CENTER" textFill="RED" wrapText="true">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Label>
+                </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="400.0" prefWidth="358.0" style="-fx-background-color: #CCFFFF;">
+                <children>
+                    <Button fx:id="btnViewRooms" layoutX="43.0" layoutY="143.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="117.0" style="-fx-background-color: #008080; -fx-cursor: hand;" text="Посмотреть номера" textAlignment="CENTER" textFill="#00ffd0" wrapText="true">
+                        <font>
+                            <Font name="System Bold" size="16.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="btnClientAccount" layoutX="197.0" layoutY="143.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="118.0" style="-fx-background-color: #008080; -fx-cursor: hand;" text="Управление аккаунтом" textAlignment="CENTER" textFill="#00ffd0" wrapText="true">
+                        <font>
+                            <Font name="System Bold" size="16.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="btnBooking" layoutX="42.0" layoutY="265.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="118.0" style="-fx-background-color: #008080; -fx-cursor: hand;" text="Мои заказы" textAlignment="CENTER" textFill="#00ffd0" wrapText="true">
+                        <font>
+                            <Font name="System Bold" size="16.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="btnReview" layoutX="197.0" layoutY="265.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="118.0" style="-fx-background-color: #008080; -fx-cursor: hand;" text="Оставить отзыв" textAlignment="CENTER" textFill="#00ffd0" wrapText="true">
+                        <font>
+                            <Font name="System Bold" size="16.0" />
+                        </font>
+                    </Button>
+                    <Label layoutX="76.0" layoutY="8.0" prefHeight="110.0" prefWidth="222.0" text="Доступные функции" textAlignment="CENTER" textFill="TEAL" wrapText="true">
+                        <font>
+                            <Font name="System Bold" size="28.0" />
+                        </font></Label>
+                </children></AnchorPane>
+        </children>
+    </HBox>
+</AnchorPane>

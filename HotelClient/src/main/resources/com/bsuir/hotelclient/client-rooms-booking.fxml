@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #CCFFFF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView fx:id="lvRooms" layoutX="14.0" layoutY="91.0" prefHeight="120.0" prefWidth="255.0" />
+      <ListView fx:id="lvServices" layoutX="331.0" layoutY="91.0" prefHeight="120.0" prefWidth="255.0" />
+      <DatePicker fx:id="dpComeIn" layoutX="14.0" layoutY="256.0" prefHeight="25.0" prefWidth="170.0" />
+      <Button fx:id="btBack" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="74.0" style="-fx-background-color: #008080; -fx-cursor: hand;" text="Назад" textFill="#00ffd0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="btBook" layoutX="459.0" layoutY="361.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="125.0" style="-fx-background-color: #008080; -fx-cursor: hand;" text="Забронировать" textFill="#00ffd0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="312.0" prefHeight="17.0" prefWidth="255.0" text="Итоговая стоимость:" textFill="TEAL">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="lbPrice" alignment="CENTER" layoutX="331.0" layoutY="312.0" prefHeight="20.0" prefWidth="66.0" textFill="TEAL">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="227.0" prefHeight="20.0" prefWidth="170.0" text="Дата въезда" textFill="TEAL">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="331.0" layoutY="227.0" prefHeight="17.0" prefWidth="255.0" text="Период бронирования" textFill="TEAL">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="127.0" layoutY="15.0" prefHeight="17.0" prefWidth="346.0" text="Бронирование" textAlignment="CENTER" textFill="TEAL">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Label fx:id="lbNumber" layoutX="14.0" layoutY="65.0" prefHeight="20.0" prefWidth="255.0" text="Список номеров:" textFill="TEAL">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="67.0" prefHeight="17.0" prefWidth="150.0" text="Список услуг:" textFill="TEAL">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="406.0" layoutY="312.0" prefHeight="17.0" prefWidth="41.0" text="руб." textFill="TEAL">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="spDays" layoutX="211.0" layoutY="256.0" prefHeight="25.0" prefWidth="85.0" />
+      <Label layoutX="211.0" layoutY="229.0" prefHeight="17.0" prefWidth="85.0" text="Дней" textFill="TEAL">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="lbDate" layoutX="331.0" layoutY="260.0" prefHeight="17.0" prefWidth="255.0" text="Label" />
+   </children>
+</AnchorPane>

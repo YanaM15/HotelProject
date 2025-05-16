@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #CCFFFF;" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bsuir.controllers.AdminReviewsController">
+    <children>
+        <Label alignment="CENTER" layoutX="251.0" layoutY="10.0" prefHeight="14.0" prefWidth="97.0" text="Отзывы" textFill="TEAL">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tvReviews" layoutX="30.0" layoutY="42.0" prefHeight="284.0" prefWidth="544.0">
+            <columns>
+                <TableColumn fx:id="tcClient" editable="false" prefWidth="120.0" text="Клиент" />
+                <TableColumn fx:id="tcRating" editable="false" prefWidth="55.0" text="Рейтинг" />
+                <TableColumn fx:id="tcReview" editable="false" prefWidth="365.0" text="Отзыв" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnBack" layoutX="30.0" layoutY="339.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="70.0" style="-fx-background-color: #008080;" text="Назад" textFill="#00ffd0">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Button>
+    </children>
+
+</AnchorPane>

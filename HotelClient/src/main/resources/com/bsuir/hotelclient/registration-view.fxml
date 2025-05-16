@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.bsuir.controllers.RegistrationController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <HBox prefHeight="401.0" prefWidth="600.0">
+            <children>
+                <AnchorPane prefHeight="400.0" prefWidth="243.0" style="-fx-background-color: white;">
+                    <children>
+                        <ImageView fitHeight="181.0" fitWidth="198.0" layoutX="14.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/hotel_building.jpg" />
+                            </image>
+                        </ImageView>
+                    </children></AnchorPane>
+                <AnchorPane prefHeight="400.0" prefWidth="402.0" style="-fx-background-color: #CCFFFF;">
+                    <children>
+                        <ImageView fitHeight="56.0" fitWidth="56.0" layoutX="28.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/registration.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="100.0" layoutY="26.0" prefHeight="54.0" prefWidth="231.0" text="Регистрация" textFill="TEAL">
+                            <font>
+                                <Font size="39.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="42.0" layoutY="112.0" prefHeight="34.0" prefWidth="68.0" text="Логин" textFill="TEAL">
+                            <font>
+                                <Font size="19.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="42.0" layoutY="148.0" prefHeight="34.0" prefWidth="68.0" text="Пароль" textFill="TEAL">
+                            <font>
+                                <Font size="19.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="42.0" layoutY="184.0" prefHeight="34.0" prefWidth="68.0" text="Имя" textFill="TEAL">
+                            <font>
+                                <Font size="19.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="42.0" layoutY="218.0" prefHeight="34.0" prefWidth="83.0" text="Фамилия" textFill="TEAL">
+                            <font>
+                                <Font size="19.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="42.0" layoutY="253.0" prefHeight="34.0" prefWidth="83.0" text="Email" textFill="TEAL">
+                            <font>
+                                <Font size="19.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="registrationBtn" layoutX="143.0" layoutY="296.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="167.0"
+                                style="-fx-background-color: #008080; -fx-cursor: hand;" onAction="#registrationClient" text="Создать аккаунт" textFill="#00ffd0">
+                            <font>
+                                <Font name="System Bold" size="17.0" />
+                            </font>
+                        </Button>
+                        <Label layoutX="42.0" layoutY="357.0" prefHeight="27.0" prefWidth="83.0" text="Есть аккаунт?" textFill="TEAL">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="authorizationBtn" layoutX="147.0" layoutY="359.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="75.0"
+                                style="-fx-background-color: transparent; -fx-cursor: hand;" text="Sing in" textFill="#1235d2" />
+                        <TextField fx:id="tfLogin" layoutX="141.0" layoutY="111.0" prefHeight="26.0" prefWidth="173.0" />
+                        <TextField fx:id="tfPass" layoutX="141.0" layoutY="146.0" prefHeight="26.0" prefWidth="174.0" />
+                        <TextField fx:id="tfName" layoutX="141.0" layoutY="181.0" prefHeight="26.0" prefWidth="174.0" />
+                        <TextField fx:id="tfSurname" layoutX="141.0" layoutY="217.0" prefHeight="26.0" prefWidth="174.0" />
+                        <TextField fx:id="tfEmail" layoutX="141.0" layoutY="253.0" prefHeight="26.0" prefWidth="174.0" />
+                    </children></AnchorPane>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>
